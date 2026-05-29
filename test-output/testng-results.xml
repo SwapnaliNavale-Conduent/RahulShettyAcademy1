@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-03T16:15:37 IST" name="Default suite" finished-at="2025-11-03T16:15:38 IST" duration-ms="835">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@c03cf28]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-11-03T16:15:37 IST" name="Default test" finished-at="2025-11-03T16:15:38 IST" duration-ms="835">
+      <class name="cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@c03cf28]" started-at="2025-11-03T16:15:37 IST" name="setUpClass" finished-at="2025-11-03T16:15:38 IST" duration-ms="620" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@40e4ea87]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@c03cf28]" started-at="2025-11-03T16:15:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-03T16:15:38 IST" duration-ms="107" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive Test of Submitting the order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce Website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\52333397\eclipse-workspace\RahulShettyAcademy1\src\main\java\rahulshettyacademy\resources\GlobalData.properties (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\52333397\eclipse-workspace\RahulShettyAcademy1\src\main\java\rahulshettyacademy\resources\GlobalData.properties (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at RahulShettyAcademyFrameworkdesign.TestComponents.BaseTest.initializeDriver(BaseTest.java:46)
+at RahulShettyAcademyFrameworkdesign.TestComponents.BaseTest.launchApplication(BaseTest.java:111)
+at rahulshettyacademy.stepDefinition.StepDefinitionImp.I_landed_on_Ecommerce_Page(StepDefinitionImp.java:26)
+at ✽.I landed on Ecommerce Page(file:///C:/Users/52333397/eclipse-workspace/RahulShettyAcademy1/src/test/java/cucumber/SubmitOrder.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@c03cf28]" started-at="2025-11-03T16:15:38 IST" name="tearDownClass" finished-at="2025-11-03T16:15:38 IST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
